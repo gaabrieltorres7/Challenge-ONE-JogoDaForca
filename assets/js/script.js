@@ -340,31 +340,31 @@ function loadImage() {
   switch (attempts) {
     case 5:
       document.querySelector(".image").style.background =
-        "url('../../assets/img/forca01.png')";
+        "url('../assets/img/forca01.png')";
       break;
     case 4:
       document.querySelector(".image").style.background =
-        "url('../../assets/img/forca02.png')";
+        "url('../assets/img/forca02.png')";
       break;
     case 3:
       document.querySelector(".image").style.background =
-        "url('../../assets/img/forca03.png')";
+        "url('../assets/img/forca03.png')";
       break;
     case 2:
       document.querySelector(".image").style.background =
-        "url('../../assets/img/forca04.png')";
+        "url('../assets/img/forca04.png')";
       break;
     case 1:
       document.querySelector(".image").style.background =
-        "url('../../assets/img/forca05.png')";
+        "url('../assets/img/forca05.png')";
       break;
     case 0:
       document.querySelector(".image").style.background =
-        "url('../../assets/img/forca06.png')";
+        "url('../assets/img/forca06.png')";
       break;
     default:
       document.querySelector(".image").style.background =
-        "url('../../assets/img/forca.png')";
+        "url('../assets/img/forca.png')";
       break;
   }
 }
