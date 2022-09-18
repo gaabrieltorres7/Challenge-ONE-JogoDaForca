@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Hangman Game</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <div class="image">
+
+      </div>
+      <div class="secret-word">
+
+      </div>
+      <div class="keyboard">
+        <div class="keys">
+          <button class="q-key" onclick="checkChosenLetter('q')">Q</button>
+          <button class="w-key" onclick="checkChosenLetter('w')">W</button>
+          <button class="e-key" onclick="checkChosenLetter('e')">E</button>
+          <button class="r-key" onclick="checkChosenLetter('r')">R</button>
+          <button class="t-key" onclick="checkChosenLetter('t')">T</button>
+          <button class="y-key" onclick="checkChosenLetter('y')">Y</button>
+          <button class="u-key" onclick="checkChosenLetter('u')">U</button>
+          <button class="i-key" onclick="checkChosenLetter('i')">I</button>
+          <button class="o-key" onclick="checkChosenLetter('o')">O</button>
+          <button class="p-key" onclick="checkChosenLetter('p')">P</button>
+        </div>
+        <div class="keys">
+          <button class="a-key" onclick="checkChosenLetter('a')">A</button>
+          <button class="s-key" onclick="checkChosenLetter('s')">S</button>
+          <button class="d-key" onclick="checkChosenLetter('d')">D</button>
+          <button class="f-key" onclick="checkChosenLetter('f')">F</button>
+          <button class="g-key" onclick="checkChosenLetter('g')">G</button>
+          <button class="h-key" onclick="checkChosenLetter('h')">H</button>
+          <button class="j-key" onclick="checkChosenLetter('j')">J</button>
+          <button class="k-key" onclick="checkChosenLetter('K')">K</button>
+          <button class="l-key" onclick="checkChosenLetter('l')">L</button>
+        </div>
+        <div class="keys">
+          <button class="z-key" onclick="checkChosenLetter('z')">Z</button>
+          <button class="x-key" onclick="checkChosenLetter('x')">X</button>
+          <button class="c-key" onclick="checkChosenLetter('c')">C</button>
+          <button class="v-key" onclick="checkChosenLetter('v')">V</button>
+          <button class="b-key" onclick="checkChosenLetter('b')">B</button>
+          <button class="n-key" onclick="checkChosenLetter('n')">N</button>
+          <button class="m-key" onclick="checkChosenLetter('m')">M</button>
+          <button class="btn-restart">🎮</button>
+        </div>
+      </div>
+      <div class="category">
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
